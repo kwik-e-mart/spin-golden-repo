@@ -23,5 +23,5 @@ eval "$(echo "$NP_ACTION_CONTEXT" | jq -r '.notification | to_entries[] | "expor
 
 # Ejecutar hook según tipo de entidad
 if [[ "$NOTIFICATION_ENTITY" == "application" ]]; then
-    ./entity_hooks/golden_repo.sh
+    ./golden_repo/entrypoint.sh
 fi
