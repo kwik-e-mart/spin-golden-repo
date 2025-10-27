@@ -1,0 +1,10 @@
+np entity-hook action create \
+  --body '{
+    "nrn": "organization=1612316954:account=1193279668:namespace=463800888",
+    "entity": "application",
+    "action": "application:create",
+    "dimensions": {},
+    "when": "after",
+    "type": "hook",
+    "on": "create"
+  }'
