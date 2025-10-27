@@ -1,0 +1,26 @@
+np notification channel create \
+  --body '{
+    "nrn": "organization=1612316954:account=1193279668:namespace=463800888",
+    "source": [
+      "entity"
+    ],
+    "description": "",
+    "type": "agent",
+    "configuration": {
+      "api_key": "",
+      "command": {
+        "data": {
+          "cmdline": "/home/ec2-user/.np/kwik-e-mart/spin-golden-repo/handle-hook.sh",
+          "environment": {
+            "NP_ACTION_CONTEXT": "${NOTIFICATION_CONTEXT}"
+          }
+        },
+        "type": "exec"
+      },
+      "selector": {
+        "service": "godlen-repo",
+        "environment": "production"
+      }
+    },
+    "filters": {}
+  }'
